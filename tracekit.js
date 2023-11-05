@@ -1303,7 +1303,7 @@ TraceKit.extendToAsynchronousCallbacks = function () {
     _helper('setInterval');
 };
 
-//Default options:
+// Default options:
 if (!TraceKit.remoteFetching) {
     TraceKit.remoteFetching = true;
 }
@@ -1325,3 +1325,6 @@ if (typeof define === 'function' && define.amd) {
 }
 
 }(typeof window !== 'undefined' ? window : global));
+
+// Export default
+export default TraceKit
